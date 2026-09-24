@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="a930359147a34b105a7027e1d16d43f1" label="Data Classification" max_length="40" name="x_2204113_networ_0_data_classification" type="collection">
+        <element label="Level" max_length="40" name="level" type="integer"/>
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element label="Description" max_length="512" name="description" type="string"/>
+        <element default="True" label="Active" max_length="255" name="active" type="boolean"/>
+    </element>
+</database>

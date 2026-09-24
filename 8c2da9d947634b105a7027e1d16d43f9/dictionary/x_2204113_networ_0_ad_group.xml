@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="8c41791547a34b105a7027e1d16d43d9" label="AD Group" max_length="40" name="x_2204113_networ_0_ad_group" type="collection">
+        <element label="Display name" mandatory="true" max_length="64" name="display_name" type="string"/>
+        <element label="Account name" max_length="64" name="account_name" type="string"/>
+    </element>
+</database>
