@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-27 06:56:25</sys_created_on>
+        <sys_id>e2b13202472bcf105a7027e1d16d4365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2204113_networ_0_network_share_access.x_2204113_networ_0.admin</sys_name>
+        <sys_package display_value="Network File Shares" source="x_2204113_networ_0">8c2da9d947634b105a7027e1d16d43f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Network File Shares">8c2da9d947634b105a7027e1d16d43f9</sys_scope>
+        <sys_security_acl display_value="x_2204113_networ_0_network_share_access">e2b13202472bcf105a7027e1d16d431e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e2b13202472bcf105a7027e1d16d4365</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-27 06:56:25</sys_updated_on>
+        <sys_user_role display_value="x_2204113_networ_0.admin" name="x_2204113_networ_0.admin">d02de9d947634b105a7027e1d16d4340</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
