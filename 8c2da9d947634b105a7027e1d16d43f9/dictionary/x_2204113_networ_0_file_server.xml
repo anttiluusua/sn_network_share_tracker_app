@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="5da62a4a47a7cf105a7027e1d16d43bf" label="File Server" max_length="40" name="x_2204113_networ_0_file_server" type="collection">
+        <element label="Available quota (GB)" max_length="40" name="available_quota_gb" read_only="true" read_only_option="display_read_only" type="integer"/>
+        <element label="Pending quota (GB)" max_length="255" name="pending_quota_gb" read_only="true" read_only_option="display_read_only" type="integer"/>
+        <element label="Total quota (GB)" mandatory="true" max_length="40" name="total_quota_gb" type="integer"/>
+        <element label="Max classification" mandatory="true" max_length="32" name="max_classification" reference="x_2204113_networ_0_data_classification" type="reference"/>
+        <element label="Utilization percent" max_length="38" name="utilization_pct" read_only="true" read_only_option="display_read_only" type="decimal"/>
+        <element choice="3" default="planned" label="Status" max_length="255" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Retired" sequence="3" value="retired"/>
+                <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
+                <element inactive_on_update="false" label="Planned" sequence="0" value="planned"/>
+                <element inactive_on_update="false" label="Closed for new shares" sequence="2" value="closed_for_new_shares"/>
+            </choice>
+        </element>
+        <element label="CI" max_length="32" name="ci" reference="cmdb_ci_server" type="reference"/>
+        <element label="Committed quota (GB)" max_length="40" name="committed_quota_gb" read_only="true" read_only_option="display_read_only" type="integer"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <index name="index">
+            <element name="ci"/>
+        </index>
+        <index name="index2">
+            <element name="max_classification"/>
+        </index>
+    </element>
+</database>

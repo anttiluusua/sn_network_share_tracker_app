@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="bd59a2ce47a7cf105a7027e1d16d4364" label="Network Share" max_length="40" name="x_2204113_networ_0_network_share" type="collection">
+        <element label="Owner" mandatory="true" max_length="32" name="owner" reference="sys_user" type="reference"/>
+        <element choice="3" default="requested" label="State" max_length="255" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Decommissioning" sequence="3" value="decommissioning"/>
+                <element inactive_on_update="false" label="Approved" sequence="1" value="approved"/>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Decommissioned" sequence="4" value="decommissioned"/>
+                <element inactive_on_update="false" label="Active" sequence="2" value="active"/>
+            </choice>
+        </element>
+        <element label="Description" max_length="2048" name="description" type="string"/>
+        <element label="Quota (GB)" max_length="40" name="quota_gb" type="integer"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="File Server" max_length="32" name="file_server" reference="x_2204113_networ_0_file_server" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="UNC Path" max_length="128" name="unc_path" read_only="true" read_only_option="display_read_only" type="string"/>
+        <element label="Classification" mandatory="true" max_length="32" name="classification" reference="x_2204113_networ_0_data_classification" type="reference"/>
+        <index name="index">
+            <element name="classification"/>
+        </index>
+        <index name="index2">
+            <element name="file_server"/>
+        </index>
+        <index name="index3">
+            <element name="owner"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Allow write for records in x_2204113_networ_0_network_share, for users with role x_2204113_networ_0.manager.</description>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_2204113_networ_0_network_share</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-27 06:19:55</sys_created_on>
+        <sys_id>c86966ce47a7cf105a7027e1d16d4397</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_2204113_networ_0_network_share</sys_name>
+        <sys_package display_value="Network File Shares" source="x_2204113_networ_0">8c2da9d947634b105a7027e1d16d43f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Network File Shares">8c2da9d947634b105a7027e1d16d43f9</sys_scope>
+        <sys_update_name>sys_security_acl_c86966ce47a7cf105a7027e1d16d4397</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-27 06:19:56</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>
